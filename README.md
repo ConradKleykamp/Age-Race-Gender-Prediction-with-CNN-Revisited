@@ -12,6 +12,15 @@ The objective of this project is to leverage the teachings of CU Boulder's Intro
 ---
 
 ### Methods
+Libraries Used
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- PIL (Image)
+- tensorflow (keras)
+- sklearn (train_test_split)
+
 Data Preprocessing
 - Mapping 'gender' = 0 to "Male" and 'gender' = 1 to "Female"
 - Assigning 'age' as dtype 'float32'
