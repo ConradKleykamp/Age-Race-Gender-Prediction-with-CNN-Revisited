@@ -1,4 +1,4 @@
-# Age-and-Gender-Prediction-with-CNN
+# Age-Race-Gender-Prediction-with-CNN
 
 This repository includes the Python notebook (originally completed on Kaggle) that was completed as the final project for CU Boulder's Introduction to Deep Learning course. 
 
