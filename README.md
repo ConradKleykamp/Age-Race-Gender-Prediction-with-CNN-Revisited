@@ -1,4 +1,4 @@
-# Age-Race-Gender-Prediction-with-CNN
+# Age-Gender-Race-Prediction-with-CNN
 
 This repository includes the Python notebook (originally completed on Kaggle) that was completed as the final project for CU Boulder's Introduction to Deep Learning course. 
 
@@ -68,45 +68,45 @@ Model Fitting and Training
 
 **Gender Performance**
 
-Gender accuracy for both train and validation sets increased across epochs (albeit with decreases at epochs 2, 3, and 6). The final gender accuracy scores were:
+Gender accuracy for both train and validation sets increased across epochs. The final gender accuracy scores were:
 
-- 0.8915 (train)
-- 0.8834 (validation)
+- 0.9166 (train)
+- 0.8910 (validation)
 
-Loss remained low and decreased marginally across epochs (with the exceptions of 2 and 6) for the training data. Validation loss was erratic, with significant increases from 0 to 6, but significant decreases 6 to 15. The final gender losses were:
+Loss remained low and decreased across epochs for the training and validation. Validation loss was slightly more erratic, and did not decrease as much as training from epoch 6 onwards. The final gender losses were:
 
-- 0.2511 (train)
-- 1.6084 (validation)
+- 0.1917 (train)
+- 0.2476 (validation)
 
 **Age Performance**
 
-Similar to gender, age accuracy increased across epochs but had dips at epochs 3 and 6. The final age accuracy scores were:
+Similar to gender, age accuracy increased across epochs. The training accuracy increased steadily but the validation accuracy was more erratic. The final age accuracy scores were:
 
-- 0.7516 (train)
-- 0.7490 (validation)
+- 0.7975 (train)
+- 0.7638 (validation)
 
-The losses for age were very similar to that of gender, with a stable, slight decrease in training loss but erratic behavior for the validation loss. The validation loss was consistently much higher than the training validation. The final age losses were:
+The losses for age were very similar to that of gender, with a stable decrease in training loss but slight erratic behavior for the validation loss. The final age losses were:
 
-- 0.5615 (train)
-- 4.5490 (validation)
+- 0.4543 (train)
+- 0.5700 (validation)
 
 **Race Performance**
 
-Race accuracies followed the same pattern, with both training and validation accuracies increasing across epochs but dipping slightly at epochs 3 and 6. The final race accuracies were:
+Race accuracies followed the same pattern, with both training and validation accuracies increasing across epochs. The final race accuracies were:
 
-- 0.7792 (train)
-- 0.7619 (validation)
+- 0.8353 (train)
+- 0.7870 (validation)
 
 The losses followed the same patterns as above. The final race losses were:
 
-- 0.6371 (train)
-- 5.2616 (validation)
+- 0.4852 (train)
+- 0.6382 (validation)
 
 **Summary of Findings**
 
-Overall, this iteration of this project has shown much improvement over my original work. Specifically, the model is now far better at predicting age (~75% accuracy vs ~4%!) and can now also predict race. All predictions (gender, age, race) faired much better than random guess, which shows that this model is progressing in the right direction. 
+Overall, this iteration of this project has shown much improvement over my original work. Specifically, the model is now far better at predicting age (~80% accuracy vs ~4%!) and can now also predict race (~83%). All predictions (gender, age, race) faired much better than random guess, which shows that this model is progressing in the right direction. 
 
-Despite the improvements, the drastic fluctuations in the validation losses suggest that the model is likely overfitting the data. 
+Despite the improvements, the fluctuations in the validation losses suggest that the model may be slightly overfitting the data.
 
 Future iterations of this project could include the following adjustments:
 
